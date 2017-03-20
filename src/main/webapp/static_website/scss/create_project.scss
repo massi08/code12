@@ -1,0 +1,42 @@
+@import "globals";
+
+
+.container-full {
+  form {
+    width: 800px;
+    margin: 0 auto;
+
+    .title-inscription {
+      text-align: center;
+    }
+
+    .connect-btn {
+      margin-left: 25px;
+    }
+
+    .btn-row-project {
+      margin-top: 20px;
+    }
+
+    .git-checkbox {
+      margin-bottom: 40px;
+    }
+
+    .label-project {
+      width: 35%;
+    }
+
+    .btn-action-project {
+      width: 20% !important;
+    }
+  }
+
+  .file-input-custom {
+    margin: 0 auto;
+    float: none;
+
+    .file-field {
+      padding: 0 !important;
+    }
+  }
+}

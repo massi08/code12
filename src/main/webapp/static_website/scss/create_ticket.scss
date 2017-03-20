@@ -1,0 +1,63 @@
+@import "globals";
+
+.title-ticket {
+  max-width: 949.75px;
+  margin: 0 auto;
+}
+
+.title-ticket h4 {
+  display: inline-block;
+  margin: 50px 0 0 0;
+}
+
+.title-ticket a {
+  float: right;
+}
+
+.container-full {
+  form {
+    width: 800px;
+    margin: 0 auto;
+
+    .title-ticket {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .connect-btn {
+      margin-left: 25px;
+    }
+
+    .btn-row-project {
+      margin-top: 20px;
+    }
+
+    .label-project {
+      width: 35%;
+    }
+
+    .btn-action-project {
+      width: 20% !important;
+    }
+
+    .input-right-prefix {
+      .prefix {
+        line-height: 2;
+        left: calc(100% - 3rem);
+
+        ~ input {
+          margin-left: 0;
+        }
+      }
+    }
+
+    select {
+      margin-top: 40px;
+      display: block;
+    }
+
+    .input-date {
+      margin-bottom: 10px;
+    }
+  }
+}

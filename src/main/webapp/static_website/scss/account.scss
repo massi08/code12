@@ -1,0 +1,37 @@
+@import "globals";
+
+form {
+  width: 800px;
+  margin: 0 auto;
+
+  .title-inscription {
+    text-align: center;
+  }
+
+  .connect-btn {
+    margin-left: 25px;
+  }
+
+  .btn-row-project {
+    margin-top: 20px;
+  }
+
+  .git-checkbox {
+    margin-bottom: 40px;
+  }
+
+  .label-project {
+    width: 35%;
+  }
+
+  .btn-action-project {
+    width: 20% !important;
+  }
+
+  .disabled-value {
+    input[type=text]:disabled {
+      color: $font-black;
+      border-bottom: 1px solid #9e9e9e;
+    }
+  }
+}

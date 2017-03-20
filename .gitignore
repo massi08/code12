@@ -1,0 +1,13 @@
+target
+.nbproject
+*.iml
+.idea
+.classpath
+.project
+node_modules
+src/main/webapp/static_website/projects
+logs/
+*.orig
+sonar-scanner-2.8/
+.hg/
+.hgignore

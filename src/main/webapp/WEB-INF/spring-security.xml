@@ -1,0 +1,48 @@
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/security
+	http://www.springframework.org/schema/security/spring-security-3.2.xsd">
+
+    <!-- Configuring RoleVoter bean to use custom access roles, by default roles
+        should be in the form ROLE_{XXX} -->
+    <http auto-config="true" use-expressions="true">
+        <intercept-url pattern="/Home" access="hasRole('User')" />
+        <intercept-url pattern="/ajax/*" access="hasRole('User')" />
+        <intercept-url pattern="/Projet/*" access="hasRole('User')" />
+
+        <intercept-url pattern="/test/*" access="hasRole('User')" />
+
+        <remember-me
+                token-validity-seconds="1209600"
+                remember-me-parameter="remember-me"
+                data-source-ref="dataSource" />
+        <form-login
+                login-page="/index"
+                default-target-url="/Home"
+                authentication-failure-url="/index"
+                username-parameter="pseudoconnect"
+                password-parameter="passwordconnect"
+                login-processing-url="/j_spring_security_check"
+                authentication-success-handler-ref="savedRequestAwareAuthenticationSuccessHandler" />
+        <logout logout-success-url="/index?logout" delete-cookies="JSESSIONID"/>
+        <csrf />
+    </http>
+
+    <authentication-manager>
+        <authentication-provider user-service-ref="MyUserDetailsService">
+            <password-encoder ref="encoder" />
+            <!--<password-encoder ref="encoder" />
+            <jdbc-user-service data-source-ref="dataSource"
+                               users-by-username-query=
+                                       "select u.PSEUDO as username, u.PASSWORD as password, u.enabled from USER u where u.PSEUDO=?"
+                               authorities-by-username-query=
+                                       "select u.PSEUDO, u.ACCESS as role from USER u where u.PSEUDO=?  "
+            />-->
+        </authentication-provider>
+    </authentication-manager>
+
+
+</beans:beans>

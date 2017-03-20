@@ -1,0 +1,132 @@
+@import "globals";
+
+.users-titles {
+  max-width: 949.75px;
+  margin: 0 auto;
+
+  h4 {
+    display: inline-block;
+    width: auto !important;
+    margin: 50px 0 0 0;
+  }
+}
+
+.row-manage-users {
+  width: 100%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  padding: 10px !important;
+  select {
+    display: block;
+  }
+}
+
+.row-add {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  padding: 0 10px 10px 10px !important;
+  padding: 20px !important;
+
+  .h5-add-user {
+    margin-top: 30px;
+  }
+
+  .radio-add-user {
+    input {
+      width: 20%;
+    }
+
+    label {
+      width: 70%;
+      margin: 10px 0 0 0;
+    }
+  }
+}
+
+.row-buttons {
+  margin-top: 50px;
+}
+
+.user-col {
+  margin: 30px 0 0 11% !important;
+}
+
+.search-label {
+  &.active {
+    transform: translateY(0) !important;
+  }
+}
+
+.user-action-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label, .user-name {
+  font-size: 16px;
+  color: $font-black;
+
+  &:first-letter {
+    text-transform: uppercase !important;
+  }
+}
+
+.user-name {
+  text-transform: capitalize;
+}
+
+.row-button {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 50px;
+
+  a {
+    margin: 0 10px;
+  }
+}
+
+.row-content {
+  margin: 0;
+  width: 100%;
+}
+
+.add-user-col {
+  margin-left: 18% !important;
+}
+
+.all-users-add {
+  max-height: 162px;
+  overflow-y: scroll;
+}
+
+.table-roles {
+  display: block;
+
+  tbody, thead {
+    display: block;
+    width: 100%;
+  }
+
+  tbody {
+    height: 315px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  tr {
+    width: 100% !important;
+  }
+
+  thead {
+    tr {
+      display: block;
+
+      th {
+        width: 32%;
+        display: inline-block;
+        text-align: left !important;
+        padding-left: 25px;
+      }
+    }
+  }
+}

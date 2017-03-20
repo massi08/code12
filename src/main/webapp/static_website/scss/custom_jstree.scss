@@ -1,0 +1,118 @@
+@import "globals";
+
+/* Click */
+
+.jstree-proton .jstree-wholerow-clicked {
+  background: $logo-color;
+  background: -moz-linear-gradient(top, $logo-color 0%, $logo-color 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $logo-color), color-stop(100%, $logo-color));
+  background: -webkit-linear-gradient(top, $logo-color 0%, $logo-color 100%);
+  background: -o-linear-gradient(top, $logo-color 0%, $logo-color 100%);
+  background: -ms-linear-gradient(top, $logo-color 0%, $logo-color 100%);
+  background: linear-gradient(to bottom, $logo-color 0%, $logo-color 100%);
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@color1', endColorstr='@color2',GradientType=0 );*/
+}
+
+/* Hover */
+
+.jstree-proton .jstree-clicked {
+  background: $logo-color;
+  color: $font-white !important;
+  border-radius: 3px;
+  box-shadow: inset 0 0 1px $logo-color;
+}
+
+.jstree-proton .jstree-hovered {
+  background: lighten($logo-color, 10%);
+  color: $font-white !important;
+  border-radius: 3px;
+  box-shadow: inset 0 0 1px lighten($logo-color, 10%);
+}
+
+.jstree-proton.jstree-checkbox-no-clicked .jstree-clicked.jstree-hovered {
+  background: lighten($logo-color, 10%);
+  color: $font-white !important;
+}
+
+.jstree-proton.jstree-checkbox-no-clicked > .jstree-wholerow-ul .jstree-wholerow-clicked.jstree-wholerow-hovered {
+  background: lighten($logo-color, 10%);
+  color: $font-white !important;
+}
+
+.jstree-proton .jstree-wholerow-hovered {
+  background: lighten($logo-color, 10%);
+}
+
+.jstree-proton .jstree-node {
+  overflow: hidden !important;
+  width: 100% !important;
+}
+
+.jstree-anchor {
+  width: 100%;
+}
+
+.jstree-proton-responsive .jstree-wholerow-clicked {
+  background: $logo-color;
+}
+
+.jstree-proton {
+  [id^=file-], [id^=jstree-local-editor-] {
+    i {
+      background: url("../img/32px.png") -100px -70px no-repeat;
+    }
+  }
+}
+
+.vakata-context {
+  display: none;
+}
+
+.vakata-context,
+.vakata-context ul {
+  margin: 0;
+  padding: 2px;
+  position: absolute;
+  background: #323232;
+  box-shadow: 0 4px 6px 1px rgba(0, 0, 0, 0.4);
+  z-index: 101;
+  border: 1px solid $font-white;
+
+  * {
+    color: $font-white !important;
+    text-shadow: none !important;
+  }
+}
+
+.vakata-context li > a:hover {
+  background-color: $font-white;
+  color: $font-black !important;
+  box-shadow: none;
+}
+
+.vakata-context .vakata-context-hover > a {
+  background-color: $font-white;
+  color: $font-black !important;
+  box-shadow: none;
+}
+
+.vakata-context .vakata-context-separator > a,
+.vakata-context .vakata-context-separator > a:hover {
+  border: 0;
+  border-top: 1px solid $font-white;
+  height: 1px;
+  min-height: 1px;
+  max-height: 1px;
+  padding: 0;
+  margin: 0 0 0 2.4em;
+  border-left: 1px solid $font-white;
+  -moz-text-shadow: 0 0 0 transparent;
+  -webkit-text-shadow: 0 0 0 transparent;
+  text-shadow: 0 0 0 transparent;
+  -moz-box-shadow: 0 0 0 transparent;
+  -webkit-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}

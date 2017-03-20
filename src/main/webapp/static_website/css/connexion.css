@@ -1,0 +1,11 @@
+.description p {
+  text-align: justify;
+  font-size: 18px;
+  margin: 0 auto;
+  margin-top: -60px;
+  max-width: 70%; }
+
+.connect-btn {
+  margin-left: 28%; }
+  .connect-btn a {
+    background: #24B998; }

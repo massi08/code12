@@ -1,0 +1,58 @@
+@import "globals";
+
+.projet-titre {
+  max-width: 949.75px;
+  margin: 0 auto;
+
+  h4 {
+    display: inline-block;
+    margin: 50px 0 0 0;
+  }
+
+  a {
+    float: right;
+    margin-top: 50px;
+  }
+}
+
+.row-cards {
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+
+//.connect-btn {
+//  a {
+//    color: white !important;
+//  }
+//}
+
+.cards {
+  width: auto;
+  display: inline-block;
+  min-width: 1000px;
+  text-align: center;
+
+  .card-projects {
+    width: 32% !important;
+    float: none;
+    position: relative;
+    display: inline-block;
+
+    .card-project {
+      padding: 5px 5px 0 5px;
+
+      div {
+        overflow: hidden;
+      }
+
+      .card-project-a {
+        display: block;
+        padding: 0 0 20px 0;
+      }
+    }
+
+    p {
+      font-style: italic;
+    }
+  }
+}

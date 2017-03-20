@@ -1,0 +1,21 @@
+.container-full form {
+  width: 800px;
+  margin: 0 auto; }
+  .container-full form .title-inscription {
+    text-align: center; }
+  .container-full form .connect-btn {
+    margin-left: 25px; }
+  .container-full form .btn-row-project {
+    margin-top: 20px; }
+  .container-full form .git-checkbox {
+    margin-bottom: 40px; }
+  .container-full form .label-project {
+    width: 35%; }
+  .container-full form .btn-action-project {
+    width: 20% !important; }
+
+.container-full .file-input-custom {
+  margin: 0 auto;
+  float: none; }
+  .container-full .file-input-custom .file-field {
+    padding: 0 !important; }

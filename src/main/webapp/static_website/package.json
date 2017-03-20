@@ -1,0 +1,17 @@
+{
+  "name": "CODE12",
+  "version": "1.0.0",
+  "description": "Code12 static website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Team CODE12",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "1.0.1",
+    "grunt-contrib-watch": "1.0.0",
+    "grunt-sass": "1.2.1",
+    "grunt-browser-sync": "2.2.0"
+  }
+}

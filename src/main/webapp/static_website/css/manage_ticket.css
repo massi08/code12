@@ -1,0 +1,34 @@
+.title-ticket {
+  max-width: 949.75px;
+  margin: 0 auto; }
+  .title-ticket h4 {
+    display: inline-block;
+    margin: 50px 0 0 0; }
+
+form {
+  margin: 2% auto auto auto; }
+  form .title-ticket {
+    margin-top: 50px;
+    text-align: center; }
+  form .connect-btn {
+    margin-left: 25px; }
+  form .btn-row-project {
+    margin-top: 20px; }
+  form .label-project {
+    width: 35%; }
+  form .btn-action-project {
+    width: 20% !important; }
+  form .input-right-prefix .prefix {
+    line-height: 2;
+    left: calc(100% - 3rem); }
+    form .input-right-prefix .prefix ~ input {
+      margin-left: 0; }
+  form select {
+    margin-top: 40px;
+    display: block; }
+  form .input-date {
+    margin-bottom: 10px; }
+  form .post-commentary {
+    margin-left: -1% !important; }
+    form .post-commentary button {
+      margin: 6.5% 0 0 2% !important; }

@@ -1,0 +1,37 @@
+.projet-titre {
+    max-width: 949.75px;
+    margin: 0 auto;
+}
+
+.projet-titre h4 {
+    display: inline-block;
+    margin: 50px 0 0 0;
+}
+
+.projet-titre a {
+    float: right;
+    margin-top: 50px;
+}
+
+.row-cards {
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+
+.cards {
+    width: auto;
+    display: inline-block;
+    min-width: 1000px;
+    text-align: center;
+}
+
+.cards .card-projects {
+    width: 32% !important;
+    float: none;
+    position: relative;
+    display: inline-block;
+}
+
+.cards .card-projects p {
+    font-style: italic;
+}

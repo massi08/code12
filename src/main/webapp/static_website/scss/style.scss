@@ -1,0 +1,257 @@
+@charset "UTF-8";
+@import "globals";
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/material_icons/MaterialIcons-Regular.eot'); /* For IE6-8 */
+  src: local('Material Icons'),
+  local('MaterialIcons-Regular'),
+  url("../fonts/material_icons/MaterialIcons-Regular.woff2") format('woff2'),
+  url("../fonts/material_icons/MaterialIcons-Regular.woff") format('woff'),
+  url("../fonts/material_icons/MaterialIcons-Regular.ttf") format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: $app-backround-color;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+footer {
+  bottom: 0px;
+  position: relative;
+  width: 100%;
+  clear: both;
+}
+
+nav {
+  ul {
+    li {
+      &.active-tab {
+        background: rgba(0, 0, 0, 0.1);
+      }
+
+      form {
+        margin: 0;
+        height: 0;
+        width: 0 !important;
+      }
+
+      a {
+        color: $font-black;
+      }
+    }
+  }
+}
+
+#logo-container {
+  padding: 10px 0 0 0;
+}
+
+.container-full {
+  width: 100%;
+  height: auto;
+  min-height: calc(100% - 64px - 184px);
+  border: solid 1px transparent;
+
+  &.fullscreen {
+    height: calc(100% - 64px);
+  }
+}
+
+.row-full {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.input-field {
+
+  input[type]:not([type=search]):not([type=url]):not([type=hidden]) {
+    &:focus {
+      border-bottom: 1px solid $input-color;
+      box-shadow: 0 1px 0 0 $input-color;
+
+      + label {
+        color: $input-color;
+      }
+    }
+
+    &.valid {
+      border-bottom: 1px solid $input-color;
+      box-shadow: 0 1px 0 0 $input-color;
+    }
+
+    &.invalid {
+      border-bottom: 1px solid $input-color-warn;
+      box-shadow: 0 1px 0 0 $input-color-warn;
+
+      + label {
+        color: $input-color-warn;
+      }
+    }
+  }
+
+  &.input-center {
+    margin-left: 25% !important;
+  }
+
+  .prefix.active {
+    color: $input-color;
+  }
+}
+
+.defaut-color * {
+  color: $font-black !important;
+}
+
+.defaut-color {
+  *, a {
+    color: $font-black !important;
+  }
+}
+
+.logo-color {
+  *, a {
+    color: $logo-color !important;
+  }
+}
+
+.warn-color {
+  *, a {
+    color: $input-color-warn !important;
+  }
+}
+
+select.hidden_select.initialized {
+  display: none;
+}
+
+.dropdown-content li {
+  > a, > span {
+    color: $font-black;
+  }
+
+  &.selected {
+    > a, > span {
+      color: $logo-color;
+    }
+  }
+}
+
+// Date Picker
+.picker__frame {
+  width: 370px !important;
+  max-width: 370px !important;
+
+  .picker {
+    outline: none;
+  }
+
+  .picker__weekday-display {
+    background-color: $logo-blue-color;
+    color: $logo-color;
+    font-weight: 600;
+  }
+
+  .picker__date-display {
+    background-color: lighten($logo-blue-color, 5%);
+    color: $logo-color;
+
+    .picker__year-display {
+      color: rgba($logo-color, 0.67);
+    }
+  }
+
+  .picker__nav--prev:hover, .picker__nav--next:hover {
+    background: rgba(0, 0, 0, 0.1) !important;
+  }
+
+  .picker__today {
+    color: $logo-color;
+  }
+
+  .picker__clear {
+    margin-left: -10px;
+  }
+
+  .picker__close {
+    color: $logo-color;
+  }
+
+  .btn-flat {
+    &:hover, &:focus {
+      background: rgba(0, 0, 0, 0.1) !important;
+    }
+  }
+
+  .picker__select--month, .picker__select--year {
+    &.browser-default {
+      display: inline;
+      background-color: #FFFFFF;
+      width: 34%;
+      border: none;
+      border-bottom: 1px solid #9E9E9E;
+      outline: none;
+    }
+  }
+  .picker__day--infocus:hover {
+    color: $logo-blue-color;
+  }
+  .picker__day--selected, .picker__day--selected:hover, .picker--focused .picker__day--selected {
+    color: $logo-color;
+    font-weight: 700;
+  }
+  .picker__day.picker__day--infocus.picker__day--selected.picker__day--highlighted {
+    background-color: $logo-blue-color;
+  }
+
+  .picker__day.picker__day--infocus.picker__day--today.picker__day--selected.picker__day--highlighted {
+    background-color: $logo-blue-color;
+    color: $logo-color;
+  }
+  .picker__day.picker__day--today {
+    color: $logo-color;
+    font-weight: 700;
+  }
+}
+
+.error {
+  color: $input-color-warn;
+}

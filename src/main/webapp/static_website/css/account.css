@@ -1,0 +1,18 @@
+form {
+  width: 800px;
+  margin: 0 auto; }
+  form .title-inscription {
+    text-align: center; }
+  form .connect-btn {
+    margin-left: 25px; }
+  form .btn-row-project {
+    margin-top: 20px; }
+  form .git-checkbox {
+    margin-bottom: 40px; }
+  form .label-project {
+    width: 35%; }
+  form .btn-action-project {
+    width: 20% !important; }
+  form .disabled-value input[type=text]:disabled {
+    color: rgba(0, 0, 0, 0.87);
+    border-bottom: 1px solid #9e9e9e; }
